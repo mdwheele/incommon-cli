@@ -1,0 +1,24 @@
+#!/usr/bin/env php
+<?php
+
+// set to run indefinitely if needed
+set_time_limit(0);
+
+// include the composer autoloader
+require_once __DIR__ . '/../vendor/autoload.php';
+
+// import the Symfony Console Application
+use InCommon\InCommon;
+use Symfony\Component\Console\Application;
+use Symfony\Component\Finder\Finder;
+use InCommon\CLI\Commands\EnrollCertCommand;
+use InCommon\CLI\Commands\CheckStatusCommand;
+use InCommon\CLI\Commands\CollectCertCommand;
+
+$incommon = new InCommon();
+
+$app = new Application('InCommon ', '0.1');
+$app->add(new EnrollCertCommand($incommon));
+$app->add(new CheckStatusCommand($incommon));
+$app->add(new CollectCertCommand($incommon));
+$app->run();

@@ -1,0 +1,28 @@
+{
+    "name": "vendor/namespace",
+    "description": "Enter a useful description here.",
+    "keywords": ["php"],
+    "homepage": "http://www.domain.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Developer Name",
+            "email": "developer@domain.com",
+            "homepage": "http://www.domain.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "mdwheele/incommon": "dev-master",
+        "symfony/console": "2.4.*",
+        "league/csv": "5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "InCommon\\CLI\\": "src",
+            "InCommon\\CLI\\Tests\\": "tests"
+        }
+    },
+    "minimum-stability": "dev"
+}
