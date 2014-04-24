@@ -33,8 +33,7 @@ class AbstractCommand extends Command
     {
         $dialog = $this->getHelperSet()->get('dialog');
 
-        #$login = $dialog->ask($output, 'Enter login: ');
-        $login = 'mdwheele@ncsu.edu';
+        $login = $dialog->ask($output, 'Enter login: ');
         $password = $dialog->askHiddenResponse($output, 'Enter password: ');
 
         $this->authData = new authData('InCommon', $login, $password);
