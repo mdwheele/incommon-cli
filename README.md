@@ -1,16 +1,20 @@
-PHP Composer Package Base
+InCommon CM SSL Web Service Client Command-line Utility
 ===
+
+Command-line Utility for InCommon Certificate Manager SSL Web Service API
+
+[![Latest Stable Version](https://poser.pugx.org/mdwheele/incommon-cli/v/stable.png)](https://packagist.org/packages/mdwheele/incommon-cli)
+[![Total Downloads](https://poser.pugx.org/mdwheele/incommon-cli/downloads.png)](https://packagist.org/packages/mdwheele/incommon-cli)
+[![License](https://poser.pugx.org/mdwheele/incommon-cli/license.png)](https://packagist.org/packages/mdwheele/incommon-cli)
 
 __Notice: This an alpha-quality software at the moment. Do NOT use in production anything!!__
 
-This repository is meant to be a blank composer package template with a few configuration niceties
-already established. This includes integrated "support" for PHPUnit, Travis CI, Composer, and more.
-Even this README.md could serve as a template for your own package documentation. Just add/remove sections
-as needed.
+This utility provides an access layer to limited functionality of the InCommon Certificate Manager SSL SOAP Web
+Service.
 
 ## Goals
 
-* Bootstrap the process of creating a composer package.
+* Provide a command-line interface for performing bulk CSR enrollments and Certificate retrieval.
 
 This package is compliant with [PSR-1][], [PSR-2][] and [PSR-4][]. If you
 notice compliance oversights, please send a patch via pull request.
@@ -26,7 +30,7 @@ Via Composer
 ``` json
 {
     "require": {
-        "vendor/package": "dev-master"
+        "mdwheele/incommon-cli": "dev-master"
     }
 }
 ```
@@ -41,30 +45,13 @@ The following versions of PHP are supported by this version.
 
 ## Documentation
 
-It is typical to include documentation about folks use the packages you write… my work here is done.
-
-``` php
-// Handle some business
-```
-
-## Todo
-
-- [ ] Add usage documentation.
-- [ ] Substitute all references of `vendor/package` with your own.
-- [ ] Update list of supported PHP versions.
-- [ ] Add your own flair!
-
-## Testing
-
-``` bash
-$ phpunit
-```
+I will have much more documentation coming soon.  Until then, this is basically it.
 
 ## Contributing
 
 Contributions are **welcome** and will be fully **credited**.
 
-We accept contributions via Pull Requests on [Github](https://github.com/vendor/package).
+We accept contributions via Pull Requests on [Github](https://github.com/mdwheele/incomon-cli/pulls).
 
 ## Pull Requests
 
@@ -96,4 +83,4 @@ $ phpunit
 
 ## License
 
-The MIT License (MIT). Please see [License File](./LICENSE) for more information.
+The MIT License (MIT). Please see [License File](LICENSE) for more information.
