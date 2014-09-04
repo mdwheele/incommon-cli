@@ -1,17 +1,16 @@
 {
-    "name": "vendor/namespace",
-    "description": "Enter a useful description here.",
-    "keywords": ["php"],
-    "homepage": "http://www.domain.com",
+    "name": "mdwheele/incommon-cli",
+    "description": "Command-line Utility for InCommon Certificate Manager SSL Web Service API",
     "license": "MIT",
     "authors": [
         {
-            "name": "Developer Name",
-            "email": "developer@domain.com",
-            "homepage": "http://www.domain.com",
-            "role": "Developer"
+            "name": "Dustin Wheeler",
+            "email": "mdwheele@ncsu.edu"
         }
     ],
+    "keywords": ["php", "incommon", "ssl", "cli"],
+    "homepage": "http://dustinwheeler.us",
+    "license": "MIT",
     "bin": ["bin/incommon"],
     "require": {
         "php": ">=5.3.0",
