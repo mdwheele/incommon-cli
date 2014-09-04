@@ -30,8 +30,14 @@ class EnrollCertCommand extends AbstractCommand
         $this->promptForCredentials($input, $output);
         $this->promptForOrgCredentials($input, $output);
 
-        $output->writeln("<info>Loading CSR Data...</info>");
         $csrPaths = $input->getArgument('csr_paths');
+
+        if (empty($csrPaths)) {
+            $this->printError("No CSR paths provided.", $output);
+            exit;
+        }
+
+        $output->writeln("<info>Loading CSR Data...</info>");
 
         foreach ($csrPaths as $path) {
             $csrData = file_get_contents($path);
