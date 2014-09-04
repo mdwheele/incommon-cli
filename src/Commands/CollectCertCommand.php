@@ -38,7 +38,7 @@ class CollectCertCommand extends AbstractCommand
         // Create destination folder.
         mkdir($dstPath, 0777, true);
         if ( ! is_writeable($dstPath)) {
-            die("OMERGERD COULDNT WRITE TO DIRECTORY!!!");
+            die("OMERGERD COULDN'T WRITE TO DIRECTORY!!!");
         }
 
         foreach ($csv as $row) {
