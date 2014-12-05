@@ -70,6 +70,17 @@ After setting all that up, it'll just go to town.
 
 ### Check status of enrolled certs
 
+```bash
+[vagrant@kraken incommon-cli]$ bin/incommon help cert:status
+Usage:
+ cert:status sslid
+
+Arguments:
+ sslid                 Path to CSR or glob.
+```
+
+`bin/incommon cert:status 123456
+
 ### Download certs
 
 ## Documentation
