@@ -49,7 +49,7 @@ class EnrollCertCommand extends AbstractCommand
                 $csrData,
                 "none", // cannot be blank -_-
                 "",
-                new customerCertType(62, 'InCommon SSL', array(1,2,3)),
+                new customerCertType(224, 'InCommon SSL (SHA-2)', array(1,2,3)),
                 $numberOfServers = 1,
                 $serverType = 2,
                 $term = 3,
